@@ -20,7 +20,7 @@ sudo nano etc/fstab
 Make an entry of the disk:
 
 ```
-UUID=<uuid> <pathtomount> ntfs uid=<userid>,gid=<groupid>,umask=0022,sync,auto,rw 0 0
+UUID=<uuid> <pathtomount> ntfs uid=<userid>,gid=<groupid>,umask=0022,sync,auto,nosuid,rw,nouser 0 0
 ```
 
 find disk uuid by - sudo blkid
